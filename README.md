@@ -1,6 +1,10 @@
 # Swahili POS Tagger — Feature Ablation Study
 
-Feature-ablation study of morphology vs. word identity vs. context for Swahili POS tagging on MasakhaPOS.
+**Does a POS tagger for Swahili even need to see the word — or is the word's shape enough?**
+
+Swahili loads a lot onto each word: a single verb can mark subject, object, tense, aspect, and negation through affixes. This is a controlled feature ablation on an averaged perceptron — from morphology only up to full lexicalization, one layer at a time — with a character BiLSTM for comparison, on MasakhaPOS Swahili.
+
+**Finding:** morphology alone reaches 0.876 accuracy, within 2.6 points of the fully lexicalized model. Once a word's affixes and neighbours are known, its own identity adds almost nothing. A plain averaged perceptron also matches a character BiLSTM that overfits the small dataset.
 
 ## Requirements
 
