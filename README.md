@@ -100,6 +100,10 @@ Test set, 5 seeds, mean ± std. Macro F1 excludes tag `X` (support 1). DET has o
 
 (All perceptron rows use the averaged perceptron; numbers are from `output/results.json`, verified independently by `verify_results.py`.)
 
+## Data
+
+The `data/` directory contains the Swahili (swa) train/dev/test split from **MasakhaPOS** (Dione et al., 2023), redistributed under CC BY 4.0. Source: https://github.com/masakhane-io/masakhane-pos
+
 ## Note on `output/`
 
 `output/` is gitignored — it holds only regenerable predictions, results, and figures. Nothing in it is committed; re-running `run_all.sh` reproduces it from scratch.
