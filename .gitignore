@@ -1,0 +1,9 @@
+.DS_Store
+__pycache__/
+*.pyc
+*.zip
+.pytest_cache/
+src_phase2_backup/
+output/_stale_*/
+output/*.pt
+output/
